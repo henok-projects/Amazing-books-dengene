@@ -1,6 +1,7 @@
 package com.customer.customer.repository;
 
 import com.customer.customer.dto.BookDetailDTO;
+import com.customer.customer.dto.BooksDTO;
 import com.customer.customer.model.Customer;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -19,8 +20,8 @@ public interface CustomerRepository extends JpaRepository<Customer, Long> {
         "    INNER JOIN Book ON Customer.isbn = Book.isbn\n" +
         "    GROUP BY Customer.isbn")
     Optional<List<BookDetailDTO>> getAvailableCopies();
-
-
+    void cancelIssue(Long isbn);
+    BooksDTO addIssue(Long isbn);
 
 
 }
