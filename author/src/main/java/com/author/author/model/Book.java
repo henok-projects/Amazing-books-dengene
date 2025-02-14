@@ -25,6 +25,10 @@ public class Book {
     @Column(name = "issued_copies")
     private Integer issuedCopies;
 
-    @OneToMany()
+    @OneToOne(fetch = FetchType.EAGER)
+    @JoinColumns({ @JoinColumn(name = "author", referencedColumnName = "author_id", insertable = false, updatable = false) })
     private Author author;
+
+    public Book(long l, String hope, String s, int i, int i1, Author author) {
+    }
 }

@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6945a138-97b6-4a23-bae3-5ddfa5ef6efb" name="Changes" comment="" />
+    <list default="true" id="6945a138-97b6-4a23-bae3-5ddfa5ef6efb" name="Changes" comment="small fix">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/java/com/api_gateway/api_gateway/config/GatewayConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/java/com/api_gateway/api_gateway/config/GatewayConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/author/src/main/java/com/author/author/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/author/src/main/java/com/author/author/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/author/src/main/java/com/author/author/model/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/author/src/main/java/com/author/author/model/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/author/src/main/java/com/author/author/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/author/src/main/java/com/author/author/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/author/src/test/java/com/author/author/controller/ControllerMokitoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/author/src/test/java/com/author/author/controller/ControllerMokitoTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/author/src/test/java/com/author/author/service/ServiceMokitoTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/author/src/test/java/com/author/author/service/ServiceMokitoTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/customer/src/main/java/com/customer/customer/openfeignclient/CustomerClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/customer/src/main/java/com/customer/customer/openfeignclient/CustomerClient.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,7 +58,46 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.CustomerApplication">
+    <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.api_gateway.api_gateway.ApiGatewayApplication" />
+      <module name="api-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.api_gateway.api_gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.customer.customer.CustomerApplication" />
+      <module name="customer" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.customer.customer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.eureka_server.eureka_server.EurekaServerApplication" />
+      <module name="eureka-server" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.eureka_server.eureka_server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="Customers" />
       <method v="2">
@@ -62,6 +111,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CustomerApplication" />
+        <item itemvalue="Application.ApiGatewayApplication" />
+        <item itemvalue="Application.EurekaServerApplication" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -72,6 +128,21 @@
       <option name="presentableId" value="Default" />
       <updated>1739515427144</updated>
     </task>
+    <task id="LOCAL-00001" summary="initial implementation">
+      <created>1739529241022</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1739529241023</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added security">
+      <created>1739531186915</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1739531186915</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -84,5 +155,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initial implementation" />
+    <MESSAGE value="Added security" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>

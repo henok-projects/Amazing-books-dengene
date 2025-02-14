@@ -33,9 +33,9 @@ public class ServiceMokitoTests {
 
         List<Book> books= new ArrayList<Book>();
 
-        books.add(new Book(1L,"hope", "12/02/2024", 1, 3, new Author());
-        books.add(new Book(1L,"hope", "12/02/2024", 1, 3, new Author());
-        books.add(new Book(1L,"hope", "12/02/2024", 1, 3, new Author());
+        books.add(new Book(1L,"hope", "12/02/2024", 1, 3, new Author("xx", "xx", "xx")));
+        books.add(new Book(2L,"hope", "12/02/2024", 1, 3, new Author("xx", "xx", "xx")));
+        books.add(new Book(3L,"hope", "12/02/2024", 1, 3, new Author("xx", "xx", "xx")));
 
         when(bookRepository.findAll()).thenReturn(books); // Moking statement
 
@@ -48,9 +48,9 @@ public class ServiceMokitoTests {
 
         List<Book> books= new ArrayList<Book>();
 
-        books.add(new Book(1L,"hope", "12/02/2024", 1, 3, new Author());
-        books.add(new Book(1L,"hope", "12/02/2024", 1, 3, new Author());
-        books.add(new Book(1L,"hope", "12/02/2024", 1, 3, new Author());
+        books.add(new Book(1L,"hope", "12/02/2024", 1, 3, new Author("xx", "xx", "xx")));
+        books.add(new Book(2L,"hope", "12/02/2024", 1, 3, new Author("xx", "xx", "xx")));
+        books.add(new Book(3L,"hope", "12/02/2024", 1, 3, new Author("xx", "xx", "xx")));
 
         Long bookId=1L;
 

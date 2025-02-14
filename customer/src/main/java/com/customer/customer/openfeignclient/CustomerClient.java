@@ -20,4 +20,6 @@ public interface CustomerClient {
     @PostMapping("/book-detail/id")
     public ResponseEntity<BookDetailDTO> fetchBookDetails(@PathVariable("isbn") Long isbn, @RequestBody BooksDTO booksDTO);
 
+
+
 }

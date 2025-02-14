@@ -11,12 +11,12 @@ public class GatewayConfig {
     @Bean
     public RouteLocator customRouteLocator(RouteLocatorBuilder builder) {
         return builder.routes()
-            .route("product-service", r -> r.path("/products/**")
-                .uri("lb://product-service")) // Use Eureka service name
-            .route("order-service", r -> r.path("/orders/**")
-                .uri("lb://order-service")) // Use Eureka service name
-            .route("user-service", r -> r.path("/users/**")
-                .uri("lb://user-service")) // Use Eureka service name
+            .route("customer", r -> r.path("/customer/**")
+                .uri("lb://customer"))
+            .route("author", r -> r.path("/author/**")
+                .uri("lb://author")) // Use Eureka service name
+            .route("book", r -> r.path("/book/**")
+                .uri("lb://book"))
             .build();
     }
 }
